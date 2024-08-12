@@ -1,50 +1,60 @@
-
 Curriculum
 Short Specializations
 Average: 73.84%
-You just released the advanced tasks of this project. Have fun!
 0x00. MySQL advanced
 Back-end
 SQL
 MySQL
  Weight: 1
- Project over - took place from Aug 7, 2024 6:00 AM to Aug 9, 2024 6:00 AM
- An auto review will be launched at the deadline
-In a nutshell…
-Auto QA review: 0.0/53 mandatory & 0.0/8 optional
-Altogether:  0.0%
-Mandatory: 0.0%
-Optional: 0.0%
-Calculation:  0.0% + (0.0% * 0.0%)  == 0.0%
+
 Concepts
 For this project, we expect you to look at this concept:
 
-Advanced SQL
+Advanced SQL {https://intranet.alxswe.com/concepts/555}
+
+sub-topics on Advanced SQL
+MySQL cheatsheet {https://devhints.io/mysql}
+MySQL Performance: How To Leverage MySQL Database Indexing {https://www.liquidweb.com/blog/mysql-optimization-how-to-leverage-mysql-database-indexing/}
+Stored Procedure {https://www.w3resource.com/mysql/mysql-procedure.php}
+Triggers {https://www.w3resource.com/mysql/mysql-triggers.php}
+Views {https://www.w3resource.com/mysql/mysql-views.php}
+Functions and Operators {https://dev.mysql.com/doc/refman/5.7/en/functions.html}
+Trigger Syntax and Examples {https://dev.mysql.com/doc/refman/5.7/en/trigger-syntax.html}
+CREATE TABLE Statement {https://dev.mysql.com/doc/refman/5.7/en/create-table.html}
+CREATE PROCEDURE and CREATE FUNCTION Statements {https://dev.mysql.com/doc/refman/5.7/en/create-procedure.html}
+CREATE INDEX Statement {https://dev.mysql.com/doc/refman/5.7/en/create-index.html}
+CREATE VIEW Statement {https://dev.mysql.com/doc/refman/5.7/en/create-view.html}
+
 Resources
 Read or watch:
 
-MySQL cheatsheet
-MySQL Performance: How To Leverage MySQL Database Indexing
-Stored Procedure
-Triggers
-Views
-Functions and Operators
-Trigger Syntax and Examples
-CREATE TABLE Statement
-CREATE PROCEDURE and CREATE FUNCTION Statements
-CREATE INDEX Statement
-CREATE VIEW Statement
+MySQL cheatsheet {https://intranet.alxswe.com/rltoken/8w9di_hk19DIMSBEV3EayQ} https://devhints.io/mysql
+MySQL Performance: How To Leverage MySQL Database Indexing {https://intranet.alxswe.com/rltoken/2GJbZ48zRPA70o2YhTdH7g} https://www.liquidweb.com/blog/mysql-optimization-how-to-leverage-mysql-database-indexing/
+Stored Procedure {https://intranet.alxswe.com/rltoken/K180X2OCzb6gzPngjn-EIg} https://www.w3resource.com/mysql/mysql-procedure.php
+Triggers {https://intranet.alxswe.com/rltoken/cJ1qA4o-rRm4rWIsqYKSZg}https://www.w3resource.com/mysql/mysql-triggers.php
+Views {https://intranet.alxswe.com/rltoken/vHg1z3UAOcWMvOt8xZHeiA} https://www.w3resource.com/mysql/mysql-views.php
+Functions and Operators {https://intranet.alxswe.com/rltoken/g-c1m6iljScpi4LeqxBRqQ} https://dev.mysql.com/doc/refman/5.7/en/functions.html
+Trigger Syntax and Examples {https://intranet.alxswe.com/rltoken/gLVwKjQfRL0Jr_nWqAS7VQ} https://dev.mysql.com/doc/refman/5.7/en/trigger-syntax.html
+CREATE TABLE Statement {https://intranet.alxswe.com/rltoken/X789nJ22H6HVh1uCQPl0lg} https://intranet.alxswe.com/rltoken/X789nJ22H6HVh1uCQPl0lg
+CREATE PROCEDURE and CREATE FUNCTION Statements {https://intranet.alxswe.com/rltoken/mfrWMt1KL3NHXblJykMgZg} https://dev.mysql.com/doc/refman/5.7/en/create-procedure.html
+CREATE INDEX Statement {https://intranet.alxswe.com/rltoken/oCu8Rg9WfKyF4BhTt8dZGQ} https://dev.mysql.com/doc/refman/5.7/en/create-index.html
+CREATE VIEW Statement {https://intranet.alxswe.com/rltoken/FEZNlZFKZmD1ISnLINkCwQ} 
+https://intranet.alxswe.com/rltoken/FEZNlZFKZmD1ISnLINkCwQ
+
 Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
 General
+
 How to create tables with constraints
 How to optimize queries by adding indexes
 What is and how to implement stored procedures and functions in MySQL
 What is and how to implement views in MySQL
 What is and how to implement triggers in MySQL
+
 Requirements
 General
+
 All your files will be executed on Ubuntu 18.04 LTS using MySQL 5.7 (version 5.7.30)
 All your files should end with a new line
 All your SQL queries should have a comment just before (i.e. syntax above)
@@ -52,14 +62,18 @@ All your files should start by a comment describing the task
 All SQL keywords should be in uppercase (SELECT, WHERE…)
 A README.md file, at the root of the folder of the project, is mandatory
 The length of your files will be tested using wc
+
 More Info
 Comments for your SQL file:
+
 $ cat my_script.sql
 -- 3 first students in the Batch ID=3
 -- because Batch 3 is the best!
 SELECT id, name FROM students WHERE batch_id = 3 ORDER BY created_at DESC LIMIT 3;
 $
+
 Use “container-on-demand” to run MySQL
+
 Ask for container Ubuntu 18.04 - Python 3.7
 Connect via SSH
 Or via the WebTerminal
@@ -78,6 +92,7 @@ $
 In the container, credentials are root/root
 
 How to import a SQL dump
+
 $ echo "CREATE DATABASE hbtn_0d_tvshows;" | mysql -uroot -p
 Enter password: 
 $ curl "https://s3.amazonaws.com/intranet-projects-files/holbertonschool-higher-level_programming+/274/hbtn_0d_tvshows.sql" -s | mysql -uroot -p hbtn_0d_tvshows
@@ -94,7 +109,9 @@ id  name
 7   Suspense
 8   Thriller
 $
+
 Tasks
+
 0. We are all unique!
 mandatory
 Score: 0.0% (Checks completed: 0.0%)
@@ -179,13 +196,12 @@ Directory: 0x00-MySQL_Advanced
 File: 1-country_users.sql
     
 2. Best band ever!
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
+
 Write a SQL script that ranks country origins of bands, ordered by the number of (non-unique) fans
 
 Requirements:
 
-Import this table dump: metal_bands.sql.zip
+Import this table dump: metal_bands.sql.zip {https://intranet.alxswe.com/rltoken/uPn947gnZLaa0FJrrAFTGQ} 
 Column names must be: origin and nb_fans
 Your script can be executed on any database
 Context: Calculate/compute something is always power intensive… better to distribute the load!
@@ -219,7 +235,7 @@ Write a SQL script that lists all bands with Glam rock as their main style, rank
 
 Requirements:
 
-Import this table dump: metal_bands.sql.zip
+Import this table dump: metal_bands.sql.zip {https://intranet.alxswe.com/rltoken/uPn947gnZLaa0FJrrAFTGQ}
 Column names must be: band_name and lifespan (in years until 2022 - please use 2022 instead of YEAR(CURDATE()))
 You should use attributes formed and split for computing the lifespan
 Your script can be executed on any database
@@ -619,7 +635,7 @@ Write a SQL script that creates an index idx_name_first on the table names and t
 
 Requirements:
 
-Import this table dump: names.sql.zip
+Import this table dump: names.sql.zip {https://intranet.alxswe.com/rltoken/BluyCCIIfw0NqcjqUiUdEw}
 Only the first letter of name must be indexed
 Context: Index is not the solution for any performance issue, but well used, it’s really powerful!
 
@@ -676,7 +692,7 @@ Write a SQL script that creates an index idx_name_first_score on the table names
 
 Requirements:
 
-Import this table dump: names.sql.zip
+Import this table dump: names.sql.zip {https://intranet.alxswe.com/rltoken/BluyCCIIfw0NqcjqUiUdEw}
 Only the first letter of name AND score must be indexed
 bob@dylan:~$ cat names.sql | mysql -uroot -p holberton
 Enter password: 
@@ -902,7 +918,7 @@ Procedure ComputeAverageScoreForUser is taking 1 input:
 user_id, a users.id value (you can assume user_id is linked to an existing users)
 Tips:
 
-Calculate-Weighted-Average {https://www.wikihow.com/Calculate-Weighted-Average}
+Calculate-Weighted-Average {https://intranet.alxswe.com/rltoken/QHx92mlF43zF6GTEil-Cyw} {https://www.wikihow.com/Calculate-Weighted-Average}
 bob@dylan:~$ cat 100-init.sql
 -- Initial
 DROP TABLE IF EXISTS corrections;
